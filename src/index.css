@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  max-width: 100vw;
 }
 
 header {
@@ -29,6 +30,8 @@ header {
   min-width: 100vw;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,25 +40,36 @@ header {
 }
 
 a {
-  font-weight: 500;
-  font-size: larger;
-  color: #9e2020;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: transparent;
   text-decoration: inherit;
   margin: 10px;
-  text-shadow: #440e0e 2px 2px 3px;
+  text-shadow: #2b2323 2px 2px 13px;
+  background-image: linear-gradient(
+    to right,
+    #9e2020 0%,
+    #bd2424 30%,
+    #141414 51%,
+    #bd2424 81%,
+    #9e2020 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-clip: text;
 }
 a:hover {
-  color: #921e1e;
+  color: transparent;
+  background-position: right center;
 }
 
 main {
-  min-height: max-content;
-  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 7%;
+  margin-top: 7vh;
   text-shadow: #242424 2px 2px 3px;
 }
 
