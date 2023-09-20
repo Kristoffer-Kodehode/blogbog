@@ -13,7 +13,7 @@ const posts = [
   },
   {
     title: "Ok, maybe I should have an actual post-looking post here...",
-    body: "So, I'm trying to learn React and using TypeScript at the same time... For some things it's pretty simple (because TypeScript can infer types pretty decently on simple stuff), while with other things it's harder. One example is when I tried to make a form that collects some and TypeScript made it so Netlify refused to build my page because it wasn't happy, like a two-year-old sitting backwards in the backseat crying out its arse about typing... It took me a while to google my way to the right answer, which was putting 'React.FormEvent<HTMLFormElement>' as the type for the event and swapping 'e.target' for 'e.currentTarget'...",
+    body: "So, I'm trying to learn React and using TypeScript at the same time... For some things it's pretty simple (because TypeScript can infer types pretty decently on simple stuff, like this project), while with other things it's harder. One example is when I tried to make a form that collects some and TypeScript made it so Netlify refused to build my page because it wasn't happy, like a two-year-old sitting backwards in the backseat crying out its arse about typing... It took me a while to google my way to the right answer, which was putting 'React.FormEvent<HTMLFormElement>' as the type for the event and swapping 'e.target' for 'e.currentTarget'...",
     date: "Today",
     id: 3,
   },
