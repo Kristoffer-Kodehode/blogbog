@@ -27,8 +27,8 @@ function Posts() {
           <div className="post" key={post.id}>
             <h2>{post.title}</h2>
             <p>
-              {post.body} <br />
-              <span>Date: {post.date}</span>
+              {post.body}
+              <h5>Date: {post.date}</h5>
             </p>
           </div>
         );
