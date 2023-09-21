@@ -90,6 +90,14 @@ main {
   box-shadow: rgb(102, 19, 19) 2px 2px 63px, inset rgb(102, 19, 19) 2px 2px 26px;
 }
 
+.post button {
+  border: none;
+  background-color: none;
+}
+.post button:hover {
+  background-color: none;
+}
+
 footer {
   display: block;
   justify-content: center;
