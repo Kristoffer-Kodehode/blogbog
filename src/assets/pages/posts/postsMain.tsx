@@ -1,3 +1,5 @@
+import ReBlogBtn from "../../components/ReBlogButton";
+
 const posts = [
   {
     title: "Welcome",
@@ -30,6 +32,7 @@ function Posts() {
               {post.body}
               <h5>Date: {post.date}</h5>
             </p>
+            <ReBlogBtn />
           </div>
         );
       })}

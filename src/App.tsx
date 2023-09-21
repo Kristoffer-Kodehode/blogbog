@@ -1,5 +1,6 @@
-import Posts from "./assets/pages/posts/posts";
+import Posts from "./assets/pages/posts/postsMain";
 import Home from "./assets/pages/home/home";
+import { PostPage } from "./assets/pages/posts/PostPage";
 import { BrowserRouter as Router, Link, Routes as Switch, Route } from "react-router-dom";
 //Whoever decided <(Browser)Router> -> <Routes> -> <Route> was a good combination of names needs professional help...
 
@@ -14,8 +15,10 @@ function App() {
       </header>
       <main>
         <Switch>
-          <Route path="/" Component={Home}></Route>
-          <Route path="/posts" Component={Posts}></Route>
+          <Route index Component={Home}></Route>
+          <Route path="/posts" Component={Posts}>
+            <Route path=":id" Component={PostPage}></Route>
+          </Route>
         </Switch>
       </main>
       <footer>
