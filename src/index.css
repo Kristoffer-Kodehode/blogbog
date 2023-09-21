@@ -39,13 +39,13 @@ header {
   box-shadow: inset 3px 2px 6px firebrick;
 }
 
-a {
+nav a {
   font-weight: 600;
   font-size: 2.5em;
   color: transparent;
   text-decoration: inherit;
   margin: 2em;
-  text-shadow: #2b2323 2px 2px 13px;
+  text-shadow: #811818 -15px 0 20px;
   background-image: linear-gradient(
     to right,
     #9e2020 0%,
@@ -58,9 +58,10 @@ a {
   background-size: 200% auto;
   background-clip: text;
 }
-a:hover {
+nav a:hover {
   color: transparent;
   background-position: right center;
+  text-shadow: #811818 15px 0 30px, #121212 0 0 10px;
 }
 
 main {
@@ -93,4 +94,14 @@ footer {
   display: block;
   justify-content: center;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+#credit {
+  margin: 0;
+}
+
+footer a {
+  color: #bd2424;
+  text-decoration: none;
 }
