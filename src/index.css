@@ -90,12 +90,20 @@ main {
   box-shadow: rgb(102, 19, 19) 2px 2px 63px, inset rgb(102, 19, 19) 2px 2px 26px;
 }
 
-.post button {
-  border: none;
-  background-color: none;
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.post button:hover {
-  background-color: none;
+
+.end button {
+  border: none;
+  background: none;
+  width: 1em;
+  height: 1em;
+}
+.end button:hover {
+  background: #27272769;
 }
 
 footer {

@@ -1,3 +1,5 @@
+import ReBlogBtn from "../../components/ReBlogBtn";
+
 const posts = [
   {
     title: "Welcome",
@@ -26,10 +28,11 @@ function Posts() {
         return (
           <div className="post" key={post.id}>
             <h2>{post.title}</h2>
-            <p>
-              {post.body}
+            <p>{post.body}</p>
+            <div className="end">
               <h5>Date: {post.date}</h5>
-            </p>
+              <ReBlogBtn />
+            </div>
           </div>
         );
       })}
