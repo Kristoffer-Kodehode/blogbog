@@ -31,7 +31,7 @@ function Posts() {
             <p>{post.body}</p>
             <div className="end">
               <h5>Date: {post.date}</h5>
-              <ReBlogBtn />
+              <ReBlogBtn /> {/*i somehow broke this at some point*/}
             </div>
           </div>
         );
