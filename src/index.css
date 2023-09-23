@@ -98,12 +98,12 @@ main {
 
 .end button {
   border: none;
-  background: none;
+  background-color: #272727;
   width: 1em;
   height: 1em;
 }
 .end button:hover {
-  background: #27272769;
+  background-color: #27272769;
 }
 
 footer {

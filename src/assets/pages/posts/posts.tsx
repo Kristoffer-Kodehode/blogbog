@@ -1,4 +1,7 @@
-import ReBlogBtn from "../../components/ReBlogBtn";
+//import ReBlogBtn from "../../components/ReBlogBtn";
+import { useState } from "react";
+import ReBlog from "../../img/reBlog.svg";
+import UnBlog from "../../img/unBlog.svg";
 
 const posts = [
   {
@@ -22,6 +25,8 @@ const posts = [
 ];
 
 function Posts() {
+  const [reBlogged, setReblogged] = useState(false);
+
   return (
     <>
       {posts.map((post) => {
@@ -31,7 +36,10 @@ function Posts() {
             <p>{post.body}</p>
             <div className="end">
               <h5>Date: {post.date}</h5>
-              <ReBlogBtn /> {/*i somehow broke this at some point*/}
+              <button onClick={() => setReblogged}>
+                {/* I broke this button at some point */}
+                <img src={reBlogged ? ReBlog : UnBlog} />
+              </button>
             </div>
           </div>
         );

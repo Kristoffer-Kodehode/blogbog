@@ -19,7 +19,7 @@ function App() {
         </Switch>
       </main>
       <footer>
-        <h6 id="credit">&copy; KristofferG 2023</h6>
+        <h6 id="credit">By KristofferG 2023</h6>
         <a href="https://github.com/Kristoffer-Kodehode">GitHub</a>
       </footer>
     </Router>
