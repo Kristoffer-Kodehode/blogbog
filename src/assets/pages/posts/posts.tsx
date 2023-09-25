@@ -36,8 +36,8 @@ function Posts() {
             <p>{post.body}</p>
             <div className="end">
               <h5>Date: {post.date}</h5>
-              <button onClick={() => setReblogged}>
-                {/* I broke this button at some point */}
+              <button onClick={() => setReblogged(!reBlogged ? true : false)}>
+                {/* Button is currently reBloging all the posts no matter which you click */}
                 <img src={reBlogged ? ReBlog : UnBlog} />
               </button>
             </div>
