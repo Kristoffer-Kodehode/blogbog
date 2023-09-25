@@ -6,7 +6,7 @@ export default function ReBlogBtn() {
   const [reBlogged, setReblogged] = useState(false);
   return (
     <>
-      <button onClick={() => setReblogged}>
+      <button onClick={() => setReblogged(!reBlogged ? true : false)}>
         <img src={reBlogged ? ReBlog : UnBlog} />
       </button>
     </>
